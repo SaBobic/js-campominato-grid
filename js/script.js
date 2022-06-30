@@ -22,8 +22,9 @@ const boxCols = 10;
 // Creo una funzione che mi permetta di creare un numero ben definito di celle secondo il quantitativo di righe e colonne
 const createGrid = (rows, cols) => {
     let grid = '';
-    for (let i = 0; i < rows * cols; i++){
-        grid += `<div class="cell"></div>`;
+    //* MILESTONE 3
+    for (let i = 1; i <= rows * cols; i++){
+        grid += `<div class="cell">${i}</div>`;
     }
     return grid;
 }
