@@ -23,9 +23,11 @@ const boxCols = 10;
 const createCell = content => {
     const cell = document.createElement('div');
     cell.className = 'cell';
-    cell.dataset.number = content;
+
     //* MILESTONE 3
+    // In ogni cella, deve comparire il numero corrispondente, in ordine da 1 a 100
     cell.innerText = content;
+
     return cell;
 }
 
@@ -34,5 +36,13 @@ playButton.addEventListener('click', function(){
     for (let i = 1; i <= boxRows * boxCols; i++){
         cell = createCell(i);
         boxElement.appendChild(cell);
+
+        //* MILESTONE 4
+        // Al click sulla cella, stampiamo il numero della cella cliccata in console, poi coloriamo la cella d'azzurro!
+        cell.addEventListener('click', function (){
+            this.classList.toggle('active');
+            console.log(this.innerText);
+        });
     }
 });
+

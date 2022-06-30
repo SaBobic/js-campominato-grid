@@ -55,6 +55,7 @@ nav{
 }
 
 #box .cell{
+    cursor: pointer;
     width: calc(100% / 10);
     height: calc(100% / 10);
     color: #007B00;
