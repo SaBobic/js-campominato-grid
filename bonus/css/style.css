@@ -15,6 +15,7 @@ body{
     color: #007B00;
     font-weight: 700;
     font-size: 24px;
+    text-align: center;
     background-color: #BDBDBD;
 }
 
@@ -31,14 +32,22 @@ header{
 }
 
 nav{
-    font-size: 20px;
-    width: 500px;
     margin: 0 auto;
+    width: 600px;
     padding: 10px;
+
+    background-color: #BDBDBD;
+    color: #0000FF;
+    font-size: 20px;
+    font-weight: 700;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #BDBDBD;
+}
+
+#play-button{
+    width: 200px;
 }
 
 /** Box */
@@ -47,30 +56,34 @@ nav{
     margin: 0 auto;
     width: 700px;
     height: 700px;
+
     background-color: #BDBDBD;
+
     display: flex;
     flex-wrap: wrap;
+
     border-width: 10px;
     border-style: solid;
     border-color: #7B7B7B #FFFFFF #FFFFFF #7B7B7B;
 }
 
 #box .cell{
-    cursor: pointer;
     width: calc(100% / 10);
     height: calc(100% / 10);
-    color: #007B00;
-    font-weight: 700;
-    font-size: 24px;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: 700;
+
+    color: #007B00;
     font-size: 24px;
-    background-color: #BDBDBD;
+    font-weight: 700;
+
     border-width: 5px;
     border-style: solid;
     border-color: #FFFFFF #7B7B7B #7B7B7B #FFFFFF;
+
+    cursor: pointer;
 }
 
 #box .cell.medium{
