@@ -49,9 +49,29 @@ nav{
     background-color: #BDBDBD;
     display: flex;
     flex-wrap: wrap;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #7B7B7B #FFFFFF #FFFFFF #7B7B7B;
 }
 
 #box .cell{
     width: calc(100% / 10);
     height: calc(100% / 10);
+    color: #007B00;
+    font-weight: 700;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 24px;
+    background-color: #BDBDBD;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #FFFFFF #7B7B7B #7B7B7B #FFFFFF;
+}
+
+#box .cell.active{
+    border: 1px solid #7F7F7F;
+    color: #0000FF;
 }
